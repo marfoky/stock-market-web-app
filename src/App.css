@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,700;1,200&family=Roboto:wght@100&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  font-size: 36px !important;
+}
+
+h2 {
+  font-size: 24px !important;
+}
+
+h3 {
+  font-size: 20px !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold !important;
+}
+
+.apex-tooltip {
+  color: "#000";
+}
+
+.grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 200px 250px;
+  padding: 30px 30px;
+  gap: 20px;
+}
+
+.candlestick-chart {
+  grid-row: 1/2;
+}
+
+.models {
+  grid-row: 1/3;
+}
+
+.indicators {
+  grid-row: 2/4;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #eee;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  .candlestick-chart {
+    grid-row: 1;
+  }
+
+  .models {
+    grid-row: 2;
+  }
+
+  .indicators {
+    grid-row: 3;
+  }
+
+  table td {
+    font-size: 5;
+  }
+}
