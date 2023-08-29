@@ -1,5 +1,5 @@
 import "./Landing.css";
-import { useEffect, useState, useRef } from "react";
+import { useEffect,  useRef } from "react";
 import AI from "../../assets/images/vision1.jpg";
 import Typed from "typed.js";
 

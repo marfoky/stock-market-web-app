@@ -1,5 +1,4 @@
 import { ApexOptions } from "apexcharts";
-import { useState } from "react";
 import ReactApexChart from "react-apexcharts";
 
 const ModelsSection = ({highsNLows, predictions}: any) => {
@@ -33,58 +32,7 @@ const ModelsSection = ({highsNLows, predictions}: any) => {
     },
     
   };
-  const chartOptions: ApexOptions = {
-    chart: {
-      type: "area",
-      stacked: false,
-      height: 350,
-      zoom: {
-        type: "x",
-        enabled: true,
-        autoScaleYaxis: true,
-      },
-      toolbar: {
-        show: false
-      }
-    },
-    dataLabels: {
-      enabled: false,
-    },
-    markers: {
-      size: 0,
-    },
-    title: {
-      text: "Stock Price Movement",
-      style: { fontSize: "15" , fontWeight: '600', fontFamily: 'inherit'},
-      align: "left",
-    },
-    fill: {
-      type: "gradient",
-      gradient: {
-        shadeIntensity: 1,
-        inverseColors: false,
-        opacityFrom: 0.5,
-        opacityTo: 0,
-        stops: [0, 90, 100],
-      },
-    },
-    
-    tooltip: {
-      shared: false,
-      y: {
-        formatter: function (val) {
-          return (val / 1000000).toFixed(0);
-        },
-      },
-    },
-  };
-
-  const [seriesData2, setSeriesData2] = useState([
-    {
-      name: "Sales",
-      data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5],
-    },
-  ]);
+  
 
   const newCategories = Array.from({ length: highsNLows[0]?.data?.length }, (_, i) => i + 1);
 
