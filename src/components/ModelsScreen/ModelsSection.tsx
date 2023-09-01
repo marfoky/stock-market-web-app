@@ -26,7 +26,7 @@ const ModelsSection = ({highsNLows, predictions}: any) => {
       
     },
     title: {
-      text: "Highs And Lows",
+      text: "Closing Price",
       style: { fontSize: "15" , fontWeight: '600', fontFamily: 'inherit'},
       align: "left",
     },
